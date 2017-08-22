@@ -76,11 +76,13 @@ nav a:hover {
 .responsive_menu {
   display: none;
   margin-left: 0;
-}
-.responsive_menu a {
   font-size: 2em;
   padding: 23.5px 10px;
   text-align: center;
+
+  float: right;
+  color: var(--header_font_colour);
+  text-decoration: none;
 }
 
 main {
@@ -93,35 +95,26 @@ main {
   }
 
   .responsive_menu {
-    display: block;
+    display: inline-block;
   }
 
   nav.responsive {
-    width: 75%;
-  }
-
-  nav.responsive .responsive_menu{
-    display: inline-block;
-    float: right;
-    width: auto;
-    padding: 0;
+    width: 100%;
   }
 
   nav.responsive ul {
     position: relative;
   }
 
-  nav.responsive li:nth-child(2) {
-    padding-top: 100px;
-  }
-
   nav.responsive li {
     display: block;
+    margin-left: 0;
   }
 
   nav.responsive a {
     float: none;
     display: block;
+    text-align: center;
   }
 
   main {
@@ -129,7 +122,7 @@ main {
   }
 }
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 320px) {
   .logo_full {
     display: none;
   }

@@ -30,7 +30,8 @@ header::after {
 
 .logo {
   float: left;
-  height: 65%;
+  /*height: 65%;*/
+  height: 58.5px;
   padding: 15px 0;
 }
 .logo_full {}
@@ -87,15 +88,44 @@ main {
 }
 
 @media screen and (max-width: 870px) {
-  main {
-    padding: 0 10vw;
-  }
-
   nav li {
     display: none;
   }
+
   .responsive_menu {
     display: block;
+  }
+
+  nav.responsive {
+    width: 75%;
+  }
+
+  nav.responsive .responsive_menu{
+    display: inline-block;
+    float: right;
+    width: auto;
+    padding: 0;
+  }
+
+  nav.responsive ul {
+    position: relative;
+  }
+
+  nav.responsive li:nth-child(2) {
+    padding-top: 100px;
+  }
+
+  nav.responsive li {
+    display: block;
+  }
+
+  nav.responsive a {
+    float: none;
+    display: block;
+  }
+
+  main {
+    padding: 0 10vw;
   }
 }
 

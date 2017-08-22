@@ -1,9 +1,10 @@
 function toggleResponsiveNavBar() {
   var navBar = document.getElementById("nav_container");
-  if (navBar.className == "navigation_container") {
-    navBar.className += " responsive";
+  if (navBar.classList.contains("responsive")) {
+    navBar.classList.remove("responsive");
   }
   else {
-    navBar.className = "navigation_container";
+    navBar.className = "responsive";
+    document.getElementById("header").style.height = "auto";
   }
 }

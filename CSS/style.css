@@ -1,7 +1,9 @@
 :root {
   --primary_colour: #9C27B0;
+  --accent_colour: #CE93D8;
+  --android_green: #A4C639;
   --header_font_colour: #ffffff;
-  --header_current_page_font_colour: #555555;
+  --active_tab_font_colour: #555555;
   font-family: 'Montserrat', sans-serif;
   height: 100%;
 }
@@ -10,6 +12,7 @@ body {
   margin: 0;
   height: 100%;
   font-weight: 100;
+  min-width: 180px;
 }
 
 .header_container {
@@ -68,12 +71,17 @@ nav a {
 
   transition: all ease-in-out 300ms;
 }
+nav a.selected {
+  color: var(--active_tab_font_colour);
+  background: var(--header_font_colour);
+}
 nav a:hover {
   color: var(--primary_colour);
   background: var(--header_font_colour);
 }
 
 .responsive_menu {
+  color: white;
   display: none;
   margin-left: 0;
   font-size: 2em;
@@ -83,35 +91,65 @@ nav a:hover {
   float: right;
   color: var(--header_font_colour);
   text-decoration: none;
+
+  transition: all ease-in-out 300ms;
+}
+.responsive_menu:hover {
+  color: var(--accent_colour);
+}
+
+.subtitle_container {
+  background: var(--header_font_colour);
+}
+
+.subtitle_container div {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.subtitle_container h1 {
+  margin: 0;
+  padding: 16px;
+  color: var(--primary_colour);
+  font-size: 3em;
+  float: left;
+  display: inline-block;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.subtitle_container h2 {
+  float: left;
+  padding: 20px;
+}
+
+#android_text {
+  color: var(--android_green);
 }
 
 main {
-  padding: 0 15vw;
+  padding: 5vh 15vh 0 15vh;
 }
 
-@media screen and (max-width: 870px) {
+@media screen and (max-width: 915px) {
+  /*Changes navigation menu to vertical*/
   nav li {
     display: none;
   }
-
   .responsive_menu {
     display: inline-block;
   }
-
   nav.responsive {
     width: 100%;
     margin-bottom: 10px;
   }
-
   nav.responsive ul {
     position: relative;
   }
-
   nav.responsive li {
     display: block;
     margin-left: 0;
   }
-
   nav.responsive a {
     float: none;
     display: block;
@@ -119,8 +157,40 @@ main {
     padding: 20px 0;
   }
 
+  .subtitle_container h1 {
+    font-size: 2em;
+  }
+  .subtitle_container h2 {
+    font-size: 1em;
+    padding: 15px;
+  }
+
   main {
-    padding: 0 10vw;
+    padding: 2vh 10vh 0 10vh;
+  }
+}
+
+@media screen and (max-width: 735px) {
+  .subtitle_container div {
+    width: 90%;
+  }
+  .subtitle_container {
+    height: auto;
+  }
+  .subtitle_container h1 {
+    font-size: 1.7em;
+    padding: 5px;
+  }
+  .subtitle_container h2 {
+    font-size: 0.7em;
+    width: 100%;
+    margin: 0;
+    padding: 5px;
+    padding-bottom: 10px;
+  }
+
+  main {
+    padding: 0 3vh 0 3vh;
   }
 }
 

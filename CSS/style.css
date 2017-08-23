@@ -121,6 +121,7 @@ nav a:hover {
 .subtitle_container h2 {
   float: left;
   padding: 20px;
+  font-weight: 100;
 }
 
 #android_text {

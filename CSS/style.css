@@ -2,8 +2,7 @@
   --primary_colour: #9C27B0;
   --accent_colour: #CE93D8;
   --android_green: #A4C639;
-  --header_font_colour: #ffffff;
-  --active_tab_font_colour: #555555;
+  --header_font_colour: #fff;
   font-family: 'Montserrat', sans-serif;
   height: 100%;
 }
@@ -72,7 +71,7 @@ nav a {
   transition: all ease-in-out 300ms;
 }
 nav a.selected {
-  color: var(--active_tab_font_colour);
+  color: #555;
   background: var(--header_font_colour);
 }
 nav a:hover {
@@ -120,7 +119,8 @@ nav a:hover {
 
 .subtitle_container h2 {
   float: left;
-  padding: 20px;
+  padding: 42px 0 0 40px;
+  margin: 0;
   font-weight: 100;
 }
 
@@ -129,7 +129,12 @@ nav a:hover {
 }
 
 main {
-  padding: 5vh 15vh 0 15vh;
+  width: 50%;
+  margin: 0 auto;
+}
+
+main p {
+
 }
 
 @media screen and (max-width: 915px) {
@@ -167,7 +172,8 @@ main {
   }
 
   main {
-    padding: 2vh 10vh 0 10vh;
+    width: 70%;
+    margin-bottom: 100px;
   }
 }
 
@@ -191,7 +197,7 @@ main {
   }
 
   main {
-    padding: 0 3vh 0 3vh;
+    width: 80%;
   }
 }
 
@@ -201,5 +207,9 @@ main {
   }
   .logo_small {
     display: block;
+  }
+
+  main {
+    width: 95%;
   }
 }

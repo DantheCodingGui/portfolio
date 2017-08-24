@@ -1,0 +1,44 @@
+.contact_container {
+  margin: 20px 0 20px 0;
+  position: relative;
+  text-align: center;
+}
+.contact_container img {
+  float: left;
+  display: inline-block;
+  height: 40px;
+  position: absolute;
+  left: 150px;
+
+  -webkit-transition: opacity ease-in-out 250ms;
+  -moz-transition: opacity ease-in-out 250ms;
+  -o-transition: opacity ease-in-out 250ms;
+  transition: opacity ease-in-out 250ms;
+}
+.contact_container img.top:hover {
+  opacity: 0;
+}
+.contact_container p {
+  margin: 8px 0 0 60px;
+  display: inline-block;
+  font-size: 1.5em;
+}
+
+.contact_link {
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px;
+  border-radius: 2px;
+  transition: all ease-in-out 250ms;
+}
+.contact_link:hover {
+    color: #fff;
+}
+
+#LinkedIn_link.contact_link:hover {
+  background: #0077b5;
+}
+#Github_link.contact_link:hover {
+  background: #6cc644;
+}

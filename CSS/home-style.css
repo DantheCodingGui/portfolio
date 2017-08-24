@@ -1,0 +1,20 @@
+.image_container {
+  background: #555;
+  display: inline-block;
+  float: left;
+  margin: 20px;
+}
+.portrait {
+  width: 150px;
+  padding: 6px;
+  display: block;
+}
+
+@media screen and (max-width: 735px) {
+  .image_container {
+    float: none;
+  }
+  main {
+    text-align: center;
+  }
+}

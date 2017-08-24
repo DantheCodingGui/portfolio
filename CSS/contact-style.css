@@ -1,3 +1,7 @@
+main {
+  margin-top: 10vh;
+}
+
 .contact_container {
   margin: 20px 0 20px 0;
   position: relative;
@@ -8,7 +12,7 @@
   display: inline-block;
   height: 40px;
   position: absolute;
-  left: 150px;
+  left: 10%;
 
   -webkit-transition: opacity ease-in-out 250ms;
   -moz-transition: opacity ease-in-out 250ms;
@@ -41,4 +45,16 @@
 }
 #Github_link.contact_link:hover {
   background: #6cc644;
+}
+
+@media screen and (max-width: 915px) {
+  .contact_container p {
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 735px) {
+  .contact_container img {
+      left: 0;
+  }
 }

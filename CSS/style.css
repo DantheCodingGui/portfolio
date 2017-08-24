@@ -133,10 +133,6 @@ main {
   margin: 0 auto;
 }
 
-main p {
-
-}
-
 @media screen and (max-width: 915px) {
   /*Changes navigation menu to vertical*/
   nav li {

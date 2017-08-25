@@ -2,10 +2,10 @@
   background: #555;
   display: inline-block;
   float: left;
-  margin: 20px;
+  margin-right: 20px;
 }
 .portrait {
-  width: 150px;
+  width: 250px;
   padding: 6px;
   display: block;
 }
@@ -13,8 +13,18 @@
 @media screen and (max-width: 735px) {
   .image_container {
     float: none;
+    margin: 0 auto;
+  }
+  .portrait {
+    width: 200px;
   }
   main {
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .portrait {
+    width: 95%;
   }
 }

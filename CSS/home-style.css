@@ -10,6 +10,10 @@
   display: block;
 }
 
+main p {
+  margin: 25px 0 25px 0;
+}
+
 @media screen and (max-width: 735px) {
   .image_container {
     float: none;

@@ -1,6 +1,5 @@
 :root {
   --primary_colour: #9C27B0;
-  --accent_colour: #CE93D8;
   --android_green: #A4C639;
   --header_font_colour: #fff;
   font-family: 'Montserrat', sans-serif;
@@ -12,6 +11,10 @@ body {
   height: 100%;
   font-weight: 100;
   min-width: 180px;
+}
+
+ul {
+  list-style: square;
 }
 
 .header_container {
@@ -92,9 +95,6 @@ nav a:hover {
   text-decoration: none;
 
   transition: all ease-in-out 300ms;
-}
-.responsive_menu:hover {
-  color: var(--accent_colour);
 }
 
 .subtitle_container {

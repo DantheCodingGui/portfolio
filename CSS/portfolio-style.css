@@ -6,8 +6,17 @@ main {
   padding: 20px 0 20px 0;
 }
 
-.image {
-  width: 100%;
+.project img {
+  max-height: 400px;
+  max-width: 100%;
+  margin: auto;
+  display: block;
+}
+
+#HackNotts-logo {
+  width: 20%;
+  margin: auto;
+  display: inline;
 }
 
 .languages {
@@ -22,7 +31,7 @@ main {
   border-radius: 20px;
 }
 
-.project a {
+.project .demo {
   color: #000;
   text-decoration: none;
   font-weight: bold;
@@ -32,7 +41,7 @@ main {
   background: #000;
   color: #fff;
 }
-.project a:hover {
+.project .demo:hover {
   background: var(--primary_colour);
 }
 

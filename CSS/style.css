@@ -17,6 +17,10 @@ ul {
   list-style: square;
 }
 
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
 .header_container {
   width: 90%;
   height: 100%;

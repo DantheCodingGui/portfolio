@@ -39,7 +39,6 @@ header::after {
 
 .logo {
   float: left;
-  /*height: 65%;*/
   height: 58.5px;
   padding: 15px 0;
 }
@@ -189,7 +188,6 @@ main {
     padding: 5px;
   }
   .subtitle_container h2 {
-    font-size: 0.7em;
     width: 100%;
     margin: 0;
     padding: 5px;

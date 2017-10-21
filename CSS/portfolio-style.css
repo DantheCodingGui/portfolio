@@ -38,7 +38,7 @@
   color: #fff;
 }
 .project .demo:hover {
-  background: var(--primary_colour);
+  background: #9C27B0;
 }
 
 .java {background: #A4C639;}

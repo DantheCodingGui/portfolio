@@ -27,20 +27,6 @@
   border-radius: 20px;
 }
 
-.project .demo {
-  color: #000;
-  text-decoration: none;
-  font-weight: bold;
-  padding: 5px;
-  border-radius: 2px;
-  transition: all ease-in-out 250ms;
-  background: #000;
-  color: #fff;
-}
-.project .demo:hover {
-  background: #9C27B0;
-}
-
 .java {background: #A4C639;}
 .xml {background: #673AB7;}
 .sql {background: #795548;}

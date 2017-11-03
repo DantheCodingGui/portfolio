@@ -40,6 +40,9 @@ main {
     color: #fff;
 }
 
+#email.contact_link:hover {
+  background: #9C27B0;
+}
 #LinkedIn_link.contact_link:hover {
   background: #0077b5;
 }

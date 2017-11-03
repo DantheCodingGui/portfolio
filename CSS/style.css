@@ -18,6 +18,20 @@ a {
   -webkit-tap-highlight-color: transparent;
 }
 
+.link {
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px;
+  border-radius: 2px;
+  transition: all ease-in-out 250ms;
+  background: #000;
+  color: #fff;
+}
+.link:hover {
+  background: #9C27B0;
+}
+
 .header_container {
   width: 90%;
   height: 100%;

@@ -1,5 +1,6 @@
 .project {
   padding: 20px 0 20px 0;
+  text-align: center;
 }
 
 .project img {
@@ -7,6 +8,16 @@
   max-width: 100%;
   margin: auto;
   display: block;
+}
+
+.project .multi-image {
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.multi-image img{
+  display: inline;
+  margin: 0 auto;
 }
 
 .HackNotts-logo {

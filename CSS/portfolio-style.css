@@ -3,11 +3,17 @@
   text-align: center;
 }
 
-.project img {
+.project_demo {
   max-height: 600px;
   max-width: 100%;
   margin: auto;
   display: block;
+}
+
+.project_icon {
+  max-width: 100px;
+  max-height: 100px
+
 }
 
 .project .multi-image {
